@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Manage landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 12px; text-align: center; }
+    .attribution a { color: hsl(12, 88%, 59%); }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+          <nav class="flex">
+                   <img src="images/logo.svg" alt="" class="logo">
+                   <ul class="flex menuList">
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Community</a></li>
+                   </ul>
+                   <div class="hamburger"><i onclick="replaceIcon(this)" class="fas fa-bars fa-2x"></i></div>
+                   <button class="orangeBtn" type="button">Get Started</button>
+          </nav>
+          <main>
+                    <div class="textGraph flex">
+                            <div class="text flex">
+                                      <h1>Bring everyone together to build better products.</h1>
+                                      <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+                                      <button class="orangeBtn" type="button">Get Started</button>
+                            </div>
+                            <div class="graph">
+                                      <img src="images/illustration-intro.svg" alt="" class="graphImg">
+                            </div>
+                    </div>
+                    <div class="manage flex">
+                            <div class="headPargrph flex">
+                                      <h2>What’s different about Manage?</h2>
+                                      <p>Manage provides all the functionality your team needs, without 
+                                        the complexity. Our software is tailor-made for modern digital 
+                                        product teams.</p>
+                            </div>
+                            <div class="btnDescrptn flex">
+                                      <div class="btnHeadDescriptn flex">
+                                                <div class="btnDiv flex">
+                                                          <button type="button" class="orangeButton">01</button>
+                                                          <h4>Track company-wide progress</h4>
+                                                </div>
+                                                <div class="headPrg flex">
+                                                         
+                                                          <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+                                                </div>
+                                      </div>
+                                      <div class="btnHeadDescriptn flex">
+                                              <div class="btnDiv flex">
+                                                        <button type="button" class="orangeButton">02</button>
+                                                        <h4>Advanced built-in reports</h4>
+                                              </div>
+                                              <div class="headPrg flex">
+                                                        
+                                                        <p>Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+                                              </div>
+                                        </div>
+                                        <div class="btnHeadDescriptn flex">
+                                              <div class="btnDiv flex">
+                                                        <button type="button" class="orangeButton">03</button>
+                                                        <h4>Everything you need in one place</h4>
+                                              </div>
+                                              <div class="headPrg">
+                                                        
+                                                        <p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution</p>
+                                              </div>
+                                    </div>
+                            </div>
+                    </div>
+
+                    <div class="carousel flex">
+                          <div class="carouselHead">
+                                <h1>What they’ve said</h1>
+                          </div>
+                          <div class="carouselContent flex">
+                                
+                               <!--  <input type="radio" id="i1" name="images" />
+                                <input type="radio" id="i2" name="images" checked/>
+                                <input type="radio" id="i3" name="images" />
+                                <input type="radio" id="i4" name="images"  /> -->
+                       
+                                <div class="slide_img flex" id="one">			
+                                        <img src="images/avatar-anisha.png" alt="" class="crslImg">
+                                        <h4>Anisha Li</h4>
+                                        <p>“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+                                </div>
+                                
+                                <div class="slide_img flex" id="two">
+                                        <img src="images/avatar-ali.png" alt="" class="crslImg">
+                                        <h4>Ali Bravo</h4>
+                                        <p>“We have been able to cancel so many other subscriptions since using 
+                                          Manage. There is no more cross-channel confusion and everyone is much 
+                                          more focused.”</p>     
+                                </div>
+                                    
+                                <div class="slide_img flex" id="three">
+                                        <img src="images/avatar-richard.png" alt="" class="crslImg">
+                                        <h4>Richard Watts</h4>
+                                        <p>“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>     
+
+                                </div>
+
+                                <div class="slide_img flex" id="four">
+                                       <img src="images/avatar-shanai.png" alt="" class="crslImg">
+                                        <h4>Shanai Gough</h4>
+                                        <p>“Their software allows us to track, manage and collaborate on our projects 
+                                          from anywhere. It keeps the whole team in-sync without being intrusive.”</p>   
+      
+                                </div>
+                              
+                                <!-- <div id="nav_slide">
+                                          <label for="i1" class="dots" id="dot1"></label>
+                                          <label for="i2" class="dots" id="dot2"></label>
+                                          <label for="i3" class="dots" id="dot3"></label>
+                                          <label for="i4" class="dots" id="dot4"></label>
+                                </div> -->
+                            </div>
+                            <div class="carouselBtn flex">
+                                    <button type="button" class="orangeBtn">Get Started</button>
+                            </div>
+                    </div>
+
+                    <div class="orangeDiv flex">
+                            <h1>Simplify how your team works today.</h1>
+                            <button type="button" class="whiteBtn">Get Started</button>
+                    </div>
+          </main>
+          <footer>
+                <div class="footerColons flex">
+                    <div class="footerCol flex">
+                            <img src="images/logo.svg" alt="" class="logo">
+                            <ul class="social flex">
+                                      <li><a href="www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                                      <li><a href="www.youtube.com"><i class="fab fa-youtube fa-2x"></i></a></li>
+                                      <li><a href="www.twitter.com"><i class="fab fa-twitter fa-2x"></i></a></li>
+                                      <li><a href="www.pinterest.com"><i class="fab fa-pinterest fa-2x"></i></a></li>
+                                      <li><a href="www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a></li>
+                            </ul>
+                    </div>
+                    <div class="footerCol flex">
+                            <ul class="flex">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">About Us</a></li>        
+                            </ul>
+                    </div>
+                    <div class="footerCol flex">
+                            <ul class="flex">
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Community</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>   
+                            </ul>
+                    </div>
+                    <div class="footerCol flex">
+                          <div class="formDiv flex">
+                                   <div class="email">
+                                                <input class="emailCorrection" type="text" name="mail" id="" placeholder="Updates in your inbox…">
+                                                <p class="emailAlert">Please insert a valid email</p>
+                                   </div> 
+                                    <div class="formBut"><button onclick="emailValidate()" type="button" class="orangeButton">Go</button></div>
+                               
+                          </div>
+                          <div class="cpyRght"><p> Copyright 2020. All Rights Reserved</p></div>
+                    </div>
+                  </div>
+                  <div class="attribution">
+                    Challenge by &nbsp;<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                    Coded by&nbsp; <a href="#">Gülay Yolcu</a>.
+                  </div>
+          </footer>
+
+</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
